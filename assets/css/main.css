@@ -3710,6 +3710,19 @@ input, select, textarea {
 						}
 
 		}
+		
+		/*Grid container with 4 columns*/
+		.grid_container {
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			gap: 1em;
+		}
+		/*Grid card element with fixed height so all cards are the same height*/
+		.grid_card {
+			padding: 1em;
+			border-radius: 0.25em;
+			height: 300px;
+		}
 
 /* Footer */
 
