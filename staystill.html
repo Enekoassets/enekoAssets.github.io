@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StayStill — Project Page</title>
+    <link rel="stylesheet" href="project-pages/staystill/staystill_project.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="container">
+
+      <h1 class="title">
+        StayStill
+      </h1>
+      <br>
+      <p class="subtitle">
+        A Large-Scale 3D Idle Animation Dataset
+      </p>
+
+      <div class="authors">
+        <a target="_blank" href="https://enekoassets.github.io/academic">Eneko Atxa Landa</a>
+        <span>•</span>
+        <a target="_blank" href="https://scholar.google.com/citations?user=pt4hFYcAAAAJ&hl=es">Igor Rodriguez</a>
+        <span>•</span>
+        <a target="_blank" href="https://scholar.google.com/citations?user=us7WCCkAAAAJ&hl=en">Elena Lazkano</a>
+        <span>•</span>
+        <a target="_blank" href="https://svito-zar.github.io/">Taras Kucherenko</a>
+      </div>
+
+      <div class="button-group">
+        <a class="btn" target="_blank" href="https://arxiv.org/pdf/2605.13693">📄 Preprint</a>
+        <a class="btn" target="_blank" href="https://github.com/Enekoassets/StayStill">💻 GitHub</a>
+        <a class="btn" href="#video">🎥 Video</a>
+        <a class="btn" target="_blank" href="https://zenodo.org/records/18741736">📦 Dataset</a>
+      </div>
+
+      <div class="hero-media">
+        <img src="project-pages/staystill/showcase.png" alt="StayStill showcase">
+      </div>
+
+    </div>
+  </header>
+
+  <section>
+    <div class="container">
+      <h2 class="section-title">Abstract</h2>
+      <p class="section-text">
+        Idle animations are essential for virtual characters, as they convey realistic behaviour during inactive states. While automatic animation generation has been widely studied, limited attention has been given to idle motion due to the absence of dedicated training datasets. We introduce StayStill, a large-scale dataset of 3D idle animations comprising diverse motion types from 50 subjects, totalling approximately 6 hours of data. We also propose an evaluation protocol for both numerical and user-based metrics as a first step towards a standardised evaluation process for future systems. To facilitate future research, we publicly release StayStill along with the evaluation code and a pre-trained baseline model that generates idle animations via transition concatenation. We believe that these contributions will enable future research on idle motion generation.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2 class="section-title">Dataset Highlights</h2>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-number">650K+</div>
+          <div class="stat-label">Motion Frames</div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-number">50</div>
+          <div class="stat-label">Subjects</div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-number">18</div>
+          <div class="stat-label">Idle Action Classes</div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-number">~6h</div>
+          <div class="stat-label">Motion Duration</div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2 class="section-title">Examples</h2>
+      <div id="video" class="hero-media">
+        <video src="project-pages/staystill/showcase_video.mp4" autoplay loop controls width="100%"></video>
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2 class="section-title">Citation</h2>
+      <div class="citation">
+      <pre><code>@article{atxa2026staystill,
+        title={StayStill: A Large-Scale 3D Idle Animation Dataset},
+        author={Atxa Landa, Eneko and Rodriguez, Igor and Lazkano, Elena and Kucherenko, Taras},
+        journal={arXiv preprint arXiv:2605.13693},
+        year={2026}
+      }</code></pre>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 StayStill Project Page
+  </footer>
+
+</body>
+</html>
