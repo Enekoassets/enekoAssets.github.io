@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ReActIdle — Project Page</title>
+    <link rel="stylesheet" href="project-pages/staystill/staystill_project.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="container">
+
+      <h1 class="title">
+        ReActIdle
+      </h1>
+      <br>
+      <p class="subtitle">
+        Evaluating idle animation believability: A user perspective
+      </p>
+      <p class="subsubtitle">
+        Published at: Computer Animation and Virtual Worlds journal
+      </p>
+
+      <div class="authors">
+        <a target="_blank" href="https://enekoassets.github.io/academic">Eneko Atxa Landa</a>
+        <span>•</span>
+        <a target="_blank" href="https://scholar.google.com/citations?user=pt4hFYcAAAAJ&hl=es">Igor Rodriguez</a>
+        <span>•</span>
+        <a target="_blank" href="https://scholar.google.com/citations?user=us7WCCkAAAAJ&hl=en">Elena Lazkano</a>
+        <span>•</span>
+        <a target="_blank" href="https://scholar.google.com/citations?user=lxYkmAgAAAAJ&hl=en">Itsaso Rodriguez-Moreno</a>
+        <span>•</span>
+        <a target="_blank" href="https://www.ehu.eus/en/web/doktoregoa/doctorate-informatics-engineering/teaching-staff?p_redirect=fichaPDI&p_idp=5232">Itziar Irigoien</a>
+      </div>
+
+      <div class="button-group">
+        <a class="btn" target="_blank" href="https://onlinelibrary.wiley.com/doi/pdf/10.1002/cav.70116">📄 Paper</a>
+        <a class="btn" target="_blank" href="https://github.com/Enekoassets/ReActIdle">💻 GitHub & 📦 Dataset</a>
+        <a class="btn" href="#conclusions">🧬 Main Conclusions</a>
+      </div>
+
+      <div class="hero-media">
+        <img src="project-pages/reactidle/frontpage.png" alt="ReActIdle showcase">
+      </div>
+
+    </div>
+  </header>
+
+  <section>
+    <div class="container">
+      <h2 class="section-title">Abstract</h2>
+      <p class="section-text">
+        Animating realistic avatars requires using high-quality animations for every possible state the avatar can be in. This includes actions like walking or running, but also subtle movements that convey emotions and personality. Idle animations, such as standing, breathing, or looking around, are crucial for realism and believability. In virtual applications, these are often handcrafted or recorded with actors, but this is costly. Furthermore, recording realistic idle animations may be complex, since the actor being aware of the recording could interfere with the genuineness of the movements. Currently, there are no large-scale idle animation datasets for deep learning, and this recording challenge may partly explain this. Nevertheless, this paper concludes that both acted and genuine idle animations are perceived as real, and users are not able to distinguish between them. It also states that raw recorded idle animations and artist-retouched ones are perceived differently. These conclusions mean that recording idle animations should be easier than expected, implying that actors can be instructed to act the movements, significantly simplifying the recording process. This should help future efforts to record idle animation datasets. Finally, we publish ReActIdle, the first three dimensional idle animation dataset containing long sequences of real and acted idle motions.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2 class="section-title">Dataset Highlights</h2>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-number">80K+</div>
+          <div class="stat-label">Motion Frames</div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-number">16</div>
+          <div class="stat-label">Acted clips</div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-number">10</div>
+          <div class="stat-label">Real Clips</div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-number">~45min</div>
+          <div class="stat-label">Motion Duration</div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2 class="section-title">Conclusions</h2>
+      <div id="conclusions" class="">
+        <div class="stat-card">
+          <div class="stat-label">1. Real and acted idle animations are perceptually the same.</div>
+          <div class="stat-label">2. There is no relevant difference in average speeds and accelerations.</div>
+          <div class="stat-label">3. Idle animations from Mixamo are perceived as "handmade".</div>
+          <div class="stat-label">4. Recorded Idle animations are perceived as "recorded".</div>
+        </div>
+      </div>
+
+      <h2 class="section-title">Data analysis graphs</h2>
+        <div class="stat-card">
+          <img src="project-pages/reactidle/mixamo_angular.png" alt="Angular speeds per joint">
+          <div class="stat-label" style="text-align: center;">Average angular speeds per joint</div>
+        </div>
+        <br>
+        <div class="stat-card">
+          <img src="project-pages/reactidle/tsne_mixamo.png" alt="Angular speeds comparison">
+          <div class="stat-label" style="text-align: center;">TSNE embedding of average speeds</div>
+        </div>
+        <br>
+        <div class="stat-card">
+          <img src="project-pages/reactidle/umap_mixamo.png" alt="Angular speeds comparison">
+          <div class="stat-label" style="text-align: center;">UMAP embedding of average speeds</div>
+        </div>
+      </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2 class="section-title">Citation</h2>
+      <div class="citation">
+      <pre><code>@article{https://doi.org/10.1002/cav.70116,
+        author = {Landa, Eneko Atxa and Lazkano, Elena and Rodriguez, Igor and Rodriguez-Moreno, Itsaso and Irigoien, Itziar},
+        title = {Evaluating Idle Animation Believability: A User Perspective},
+        journal = {Computer Animation and Virtual Worlds},
+        volume = {37},
+        number = {3},
+        pages = {e70116},
+        keywords = {animation, idle motion, motion capture, motion perception},
+        doi = {https://doi.org/10.1002/cav.70116},
+        url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/cav.70116},
+        eprint = {https://onlinelibrary.wiley.com/doi/pdf/10.1002/cav.70116},
+        year = {2026}
+        }
+      </code></pre>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 ReActIdle Project Page
+  </footer>
+
+</body>
+</html>
