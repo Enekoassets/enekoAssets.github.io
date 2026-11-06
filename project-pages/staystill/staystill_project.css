@@ -10,9 +10,25 @@
       --border: #252b36;
       --text: #f5f7fa;
       --muted: #aab2bf;
-      --accent: #82ff7c;
-      --accent-hover: #a1ff9d;
+      --accent: #7cb9ff;
+      --accent-hover: #95c4fb;
       --max-width: 1150px;
+    }
+
+    .accent{
+      color: var(--accent);
+    }
+
+    .indent{
+      text-indent: 3em;
+    }
+
+    .double-indent{
+      text-indent: 6em;
+    }
+
+    .triple-indent{
+      text-indent: 9em;
     }
 
     *{
@@ -91,7 +107,7 @@
     }
 
     .authors a:hover{
-      color:white;
+      color:var(--accent-hover);
     }
 
     .button-group{
@@ -99,7 +115,7 @@
       justify-content:center;
       gap:14px;
       flex-wrap:wrap;
-      margin-bottom:60px;
+      margin-bottom:30px;
     }
 
     .btn{
@@ -127,7 +143,7 @@
     /* SECTION */
 
     section{
-      padding: 80px 0;
+      padding: 20px 0;
     }
 
     .section-title{

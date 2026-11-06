@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CtrlIdle — Project Page</title>
+    <link rel="stylesheet" href="project-pages/staystill/staystill_project.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="container">
+
+      <h1 class="title">
+        CtrlIdle
+      </h1>
+      <br>
+      <p class="subtitle">
+        Controllable Idle Motion Generation With Flow Matching
+      </p>
+      <!-- <p class="subsubtitle">
+        Sent to: Computer Graphics Forum
+      </p> -->
+
+      <div class="authors">
+        <a target="_blank" href="https://enekoassets.github.io/academic">Eneko Atxa Landa</a>
+        <span>•</span>
+        <a target="_blank" href="https://scholar.google.com/citations?user=pt4hFYcAAAAJ&hl=es">Igor Rodriguez</a>
+        <span>•</span>
+        <a target="_blank" href="https://scholar.google.com/citations?user=us7WCCkAAAAJ&hl=en">Elena Lazkano</a>
+        <span>•</span>
+        <a target="_blank" href="https://people.kth.se/~ghe/">Gustav Eje Henter</a>
+      </div>
+
+      <div class="button-group">
+        <a class="btn" target="_blank" href="">📄 Arxiv Preprint</a>  <!-- TODO: change the link -->
+        <!-- <a class="btn" target="_blank" href=https://onlinelibrary.wiley.com/doi/10.1111/cgf.70571">📖 Paper</a> -->
+        <a class="btn" target="_blank" href="https://github.com/Enekoassets/CtrlIdle">💻 GitHub</a>
+        <!-- <a class="btn" href="#video">🎥 Video</a> TODO: are we going to make a video? -->
+      </div>
+
+       <section>
+        <div class="container">
+          <div id="video" class="hero-media">
+            <video src="project-pages/ctrlidle/ctrl_idle_demo.mp4" autoplay loop controls muted width="100%"></video>
+          </div>
+        </div>   
+      </section>
+    </div>
+  </header>
+
+  <section>
+    <div class="container">
+      <h2 class="section-title">Abstract</h2>
+      <p class="section-text citation">
+        Idle behaviour is a central characteristic of video game NPCs and virtual characters. Creating these animations is part of nearly every pipeline of video game and virtual experience development. Recent advances in generative modelling have enabled generating many types of animations, such as locomotion or co-speech gestures, albeit no works have explored the use of deep-learning to generate idle animations. In this paper, we present CtrlIdle, the first generative system that allows to generate idle animations and enables to control the generative process with input signals that are easy to use and understand for the end user. It is trained using conditional flow matching (CFM), which permits to generate diverse animations stochastically, providing different outputs for the same control signals. We use both numerical and user-based evaluations to measure the quality of the generated output and the effectiveness of the control system.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2 class="section-title">Features</h2>
+      <div class="citation">
+        <p class="indent">- <span class="accent">First model</span> to generate idle animations.</p>
+        <p class="indent">- <span class="accent">Stochastic generation:</span></p>
+        <p class="indent">Generate new and different animations every time, thanks to flow matching.</p>
+        <p class="indent">- <span class="accent">Control system:</span> specific for idle animations</p>
+        <p class="double-indent">- <span class="accent">Pose control:</span> Generate the motion conditioned on a reference pose.</p>
+        <p class="double-indent">- <span class="accent">Speed control:</span> Guide motion using a 6 target speed control system.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2 class="section-title">Other Results</h2>
+      <div class="citation">
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- <section>
+    <div class="container">
+      <h2 class="section-title">Presentation video</h2>
+      <h2 class="subtitle" style="text-align: center;">Symposium on Computer Animation 2026</h2>
+      <div id="video" class="hero-media">
+        <iframe src="https://www.youtube.com/embed/lhWebn_zrac" controls muted width="100%" style="aspect-ratio: 16 / 9; border: 0;"></iframe>
+      </div>
+    </div>
+  </section> -->
+
+  <section>
+    <div class="container">
+      <h2 class="section-title">Citation</h2>
+      <div class="citation">
+      <pre><code>@article{landa2026staystill,
+      author = {Atxa Landa, Eneko and Rodriguez, Igor and Lazkano, Elena and Henter, Gustav Eje},
+      title = {CtrlIdle: Controllable Idle Motion Generation With Flow Matching},
+      journal = {Computer Graphics Forum},
+      year = {2027}
+    }</code></pre>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2027 CtrlIdle Project Page
+  </footer>
+
+</body>
+</html>
